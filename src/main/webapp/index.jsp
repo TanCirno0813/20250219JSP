@@ -28,9 +28,10 @@ try(
 		){
 	while(rs.next()){
 %>
+	
 	<tr>
 	<td>
-	 <%= rs.getString("deptno") %>
+	 <a href = "updFormDept.jsp?deptno=<%= rs.getString("deptno") %>"><%= rs.getString("deptno") %></a>
 	 </td>
 	 <td>
 	 <%= rs.getString("dname") %>
